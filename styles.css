@@ -11,6 +11,40 @@
     --text-gray: #d3d3d3;
 }
 
+     
+.upperPart {
+    background: #000;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding: 10px 120px;
+}
+
+.nav-menu1 li a {
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    color: #d3d3d3;
+
+
+}
+
+.nav-menu1 li {
+    color: white;
+    list-style: none;
+    margin-inline: 8px;
+
+
+
+}
+
+.nav-menu1 {
+
+    display: flex;
+    flex-direction: row;
+}
+
 /* Top Bar */
 .top-bar {
     background: var(--secondary-color);
@@ -54,6 +88,12 @@ header {
     padding: 1rem;
 }
 
+.nav-container img{
+    margin-left: 110px;
+    width: 50px;
+    height: 50px;
+}
+
 .logo {
     font-size: 1.5rem;
     font-weight: 900;
@@ -87,6 +127,7 @@ header {
 }
 
 /* Hero Section */
+/* Hero Section */
 .hero {
     background: url('/api/placeholder/1200/600') center/cover;
     background-color: #f7f7f7;
@@ -105,6 +146,22 @@ header {
     background-image: url(bg.png);
 }
 
+/* Add this new rule for Spider-Man image */
+.hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0px;  /* Moved further down */
+    right: -270px; 
+    width: 1300px;  /* Adjust size as needed */
+    height: 950px; /* Adjust size as needed */
+    background-image: url('spidermann.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    z-index: 1;
+}
+
+
 .hero-content {
     max-width: 1200px;
     height: 800px;
@@ -113,7 +170,7 @@ header {
     position: relative;
     z-index: 1;
     padding-left: 120px;
-    padding-top: 80px;
+    padding-top: 40px;
 }
 
 .hero h1 {
@@ -125,16 +182,22 @@ header {
 }
 
 .hero h2 {
-    color: var(--primary-color);
     font-size: 68px;
     font-weight: 900;
-    margin-bottom: 2rem;
+    margin-bottom: 2rem; 
     max-width: 60%;
     line-height: 1.1;
-    background: linear-gradient(to right, var(--primary-color), #ff8a80);
+
+    /* Set the image as the background */
+    background-image: url('background.jpeg'); /* Use your image path here */
+    background-size: cover; /* Ensure the image covers the text area */
+    background-position: center; /* Center the background image */
+
+    /* Clip the image to the text */
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; /* Make the text color transparent */
 }
+
 
 .hero p {
     color: var(--secondary-color);
@@ -200,14 +263,31 @@ header {
 }
 
 .main-program {
-    background-color: #2c2c2c;
-    padding: 4rem 1rem;
+    position: relative;
     color: white;
+    background-color: #2c2c2c;
+    padding: 80px 120px;
+    z-index: 1; /* Ensure content is above the background image */
 }
 
-.program-container {
-    max-width: 1200px;
-    margin: 0 auto;
+.main-program::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    /* Add the background image */
+    background-image: url('mainProgram.png');
+    background-size: cover;
+    background-position: center;
+
+    /* Lower the opacity of the background image */
+    opacity: 0.1;
+
+    /* Make sure the image appears behind the content */
+    z-index: -1;
 }
 
 .program-title {
@@ -230,18 +310,19 @@ header {
 
 .program-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 3px;
-    margin-bottom: 3rem;
+    grid-template-columns: repeat(auto-fit,minmax(160px,1fr));
+    gap: 4px;
+    margin-bottom: 2rem;
 }
 
 .program-item {
-    background: rgba(60, 63, 70, 0.9);
-    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 50px 20px;
     display: flex;
+    width: 220px;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 4px;
     transition: all 0.3s ease;
 }
 
