@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Summit 2024</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="upperPart">
+           
+           
+            <ul class="nav-menu1">
+                <li><i class="fa-brands fa-facebook"></i></li>
+                <li><i class="fa-brands fa-twitter"></i></li>
+                <li><a href="#English">English</a></li>
+                <li><a href="#MyPage">Mypage</a></li>
+                <li><a href="#Logout">Logout</a></li>
+            </ul>
+           
+        </nav>
+        <nav class="nav-container">
+            <a href="#" class="logo"> <img src="global.png" alt=""></a>
+            <ul class="nav-menu">
+                <li><a href="#about" class="about">About</a></li>
+                <li><a href="#program">Program</a></li>
+                <li><a href="#join">Join</a></li>
+                <li><a href="#sponsor">Sponsor</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#campaign" class="campaign">CC Campaign</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-close">
+            <i class="fas fa-times"></i>
+        </div>
+        <ul class="mobile-nav">
+            <li><a href="#about">About</a></li>
+            <li><a href="#program">Program</a></li>
+            <li><a href="#join">Join</a></li>
+            <li><a href="#sponsor">Sponsor</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#campaign">WD Campaign</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>"| Marvel's"</h1>
+            <h2>THE AMAZING SPIDERMAN-2</h2>
+            <p>The Amazing Spider-Man 2 (2014) follows Peter Parker as he balances his life as Spider-Man with his relationship with Gwen Stacy. He faces new threats in the form of Electro, a former Oscorp employee who gains powerful electrical abilities, and Harry Osborn, his childhood friend who transforms into the Green Goblin..</p>
+            <div class="date-location">
+                2024.06.15(SAT) ~ 16(SUN)
+            </div>
+            <div class="venue">
+                @ Silicon Valley Convention Center and more
+            </div>
+        </div>
+    </section>
+
+    <section class="main-program" id="program">
+        <div class="program-container">
+            <h2 class="program-title">Main Program</h2>
+            <div class="program-grid">
+                <div class="program-item">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <div>
+                        <h3>Lecture</h3>
+                        <p>Listen to the speakers from various countries about the messages of sharing and opening.</p>
+                    </div>
+                </div>
+                <div class="program-item">
+                    <i class="fas fa-desktop"></i>
+                    <div>
+                        <h3>CC Exhibition</h3>
+                        <p>Appreciate various creations applying CC license of artists, organized from Art Center Nabi.
+                        </p>
+                    </div>
+                </div>
+                <div class="program-item">
+                    <i class="fas fa-comments"></i>
+                    <div>
+                        <h3>Forum</h3>
+                        <p>Have the time to share your thoughts and opinions with experts for each topic.</p>
+                    </div>
+                </div>
+                <div class="program-item">
+                    <i class="fas fa-laptop-code"></i>
+                    <div>
+                        <h3>Workshop</h3>
+                        <p>Try creating your own work using open source license rather than just watching at it.</p>
+                    </div>
+                </div>
+                <div class="program-item">
+                    <i class="fas fa-network-wired"></i>
+                    <div>
+                        <h3>CC Ignite</h3>
+                        <p>Get opportunities to network with CC affiliates around the world, also after the summit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="see-program">
+                <a href="#">SEE THE WHOLE PROGRAM</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="speakers" id="speakers">
+        <div class="speakers-container">
+            <h2 class="speakers-title">
+                | Movie cast </h2>
+            <div class="speakers-grid" id="speakersGrid">
+                <!-- Dynamically populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="partners" id="partners">
+        <h2>Partner</h2>
+        <div class="partners-grid">
+            <img src="—Pngtree—fifa world cup 2022 with_7930685.png" alt="Mozilla" class="partner-logo">
+            <img src="Sony_Pictures-Logo.wine.png" alt="Google" class="partner-logo">
+            <img src="wallpaperflare.com_wallpaper-removebg-preview.png" alt="Naver" class="partner-logo">
+            <img src="spiderman.png" alt="Naver" class="partner-logo">
+            <img src="Framestore_2015_(Symbol).svg" alt="Daumkakao" class="partner-logo">
+            <img src="spidermann.png" alt="Airbnb" class="partner-logo">
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-content">
+            <img src="korea.png" alt="Creative Commons Korea" class="cc-logo">
+            <div class="footer-text">
+                <p>2015 Creative Commons Korea. Some Rights Reserved.</p>
+                <p>달리 정하지 않은 웹사이트의 모든 내용은 크리에이티브 커먼즈 저작자표시 2.0 대한민국 라이선스에 따라 이용할 수 있습니다.</p>
+                <p>자세한 이용기능은 <a
+                        href="http://creativecommons.org/licenses/by/2.0/kr/">http://creativecommons.org/licenses/by/2.0/kr/</a>
+                    를 보세요.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
